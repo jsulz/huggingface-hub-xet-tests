@@ -18,4 +18,4 @@ jobs:
       - name: Run test with uv (ephemeral deps)
         env:
           HF_HUB_DISABLE_TELEMETRY: "1"
-        run: uv run --with huggingface_hub --with hf-xet==1.1.5 test.py
+        run: uv run --with huggingface_hub test.py
