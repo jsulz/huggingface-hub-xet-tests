@@ -1,4 +1,7 @@
 import sys
+import os
+
+os.environ["HF_XET_NUM_CONCURRENT_RANGE_GETS"] = "16"
 from huggingface_hub import snapshot_download
 
 REPO_ID = "Qwen/Qwen2.5-VL-3B-Instruct"
