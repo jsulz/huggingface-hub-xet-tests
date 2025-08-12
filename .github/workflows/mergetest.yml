@@ -19,4 +19,5 @@ jobs:
         env:
           HF_XET_NUM_CONCURRENT_RANGE_GETS: "8"
           HF_XET_MAX_CONCURRENT_DOWNLOADS: "1"
+          HF_HUB_DISABLE_XET: "1"
         run: uv run --with huggingface_hub --with hf-xet==1.1.5 test.py

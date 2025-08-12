@@ -2,6 +2,8 @@ import sys
 import os
 from huggingface_hub import snapshot_download
 
+print(os.environ.get("HF_HUB_DISABLE_XET", "Not set"))
+
 REPO_ID = "Qwen/Qwen2.5-VL-3B-Instruct"
 print(f"Downloading {REPO_ID}...")
 
