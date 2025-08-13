@@ -7,7 +7,7 @@ print(f"Downloading {REPO_ID}...")
 
 try:
     path = snapshot_download(repo_id=REPO_ID)
-    print(f"Downloaded {REPO_ID} -> {path}")
+    print(f"Downloaded this repo: {REPO_ID} here: {path}")
 except Exception as e:
     print(f"Download failed: {e}", file=sys.stderr)
     sys.exit(1)
