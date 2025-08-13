@@ -16,6 +16,4 @@ jobs:
       - uses: astral-sh/setup-uv@v4
 
       - name: Run test with uv (ephemeral deps)
-        env:
-          HF_HUB_DISABLE_TELEMETRY: "1"
         run: uv run --with huggingface_hub test.py
